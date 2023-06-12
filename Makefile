@@ -132,6 +132,13 @@ UPROGS=\
 	$U/_grind\
 	$U/_wc\
 	$U/_zombie\
+	$U/_clear\
+	$U/_pwd\
+	$U/_echo1\
+	$U/_exec_ex\
+	$U/_prime_calc\
+	$U/_mysh\
+	$U/_test\
 
 fs.img: mkfs/mkfs README $(UPROGS)
 	mkfs/mkfs fs.img README $(UPROGS)

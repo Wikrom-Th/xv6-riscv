@@ -89,3 +89,11 @@ sys_uptime(void)
   release(&tickslock);
   return xticks;
 }
+
+// syscall that returns my name 
+uint64
+sys_getname(void)
+{
+  char* name = "Thamchareonkit Wikrom";
+  return (uint64) name;
+}
